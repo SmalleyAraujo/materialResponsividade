@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/paisagem.css" media="screen and (orientation : landscape)">
+    <link rel="stylesheet" href="style/retrato.css" media="screen and (orientation : portrait)">
+</head>
+<body>
+    <div id="pagina">
+        <nav>
+            <img src="images/menuIcon.svg" alt="" id="menuIcon" onclick="mostrar()">
+            <ul id="menuOpcoes">
+                <li>Opcao</li>
+                <li>Opcao</li>
+                <li>Opcao</li>
+                <li>Opcao</li>
+                <li>Opcao</li>
+            </ul>
+            <!-- onclick  / onmousemove -->
+        </nav>
+
+        <!-- main -->
+        <div id="post">
+            <picture>
+                <source media="(max-width:730px)" srcset="images/mulherdancandoMenor.jpg" class="foto">
+                <img src="images/mulherdancando.jpg" alt="" class="foto">
+            </picture>
+            <!-- Exemplo de substituição de imagem de acordo com a resolução -->
+            
+            <h1>Uma dança na água</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos doloribus quam itaque dolorum dolorem ipsam. Error numquam, dicta iusto eveniet doloribus similique recusandae aliquam distinctio, rerum impedit, accusamus quis officia.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, maiores. Distinctio, quo perferendis odio ex repellat libero a similique ipsam praesentium, consequatur facere quod harum? Voluptatibus sit molestias odit doloremque?</p>
+            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam veniam ipsum qui rerum praesentium accusantium beatae commodi deserunt! Praesentium voluptas ea laborum amet nisi omnis, accusantium id nam sequi minus?</P>
+        </div>
+    </div>
+   <script>
+        function mostrar(){
+            if(menuOpcoes.style.display == "none"){
+                menuOpcoes.style.display = "block"
+            } else{
+                menuOpcoes.style.display = "none"
+            }
+        }
+   </script> 
+</body>
+</html>
