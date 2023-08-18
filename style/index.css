@@ -28,7 +28,7 @@ body{
     width: 80%;
     
 }
-
+/* Área de impressão modelo de configuração  */
 @media print{
     #post{        
         color: red;
